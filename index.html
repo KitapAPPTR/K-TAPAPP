@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitapHep - Modern İkinci El Kitap Platformu</title>
+    <style>
+        /* Sinematik Koyu Arka Plan Düzeni */
+        body {
+            background-color: #121212; /* Arka planı şık bir siyha çevirdik */
+            color: #ffffff; /* Yazıları beyaz yaptık */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #f39c12; /* KitapHep başlığı artık altın sarısı */
+        }
+        .alt-baslik {
+            color: #aaaaaa;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        /* Kategoriler */
+        .kategoriler {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .kat-buton {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .kat-buton:hover {
+            background-color: #f39c12;
+            color: #121212;
+            border-color: #f39c12;
+        }
+        /* Kitap Vitrini (Grid Düzeni) */
+        .vitrin-baslik {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            align-self: flex-start;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 5px;
+        }
+        .kitap-izgara {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 50px;
+        }
+        .kitap-kart {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #222;
+        }
+        .kitap-resim-bosluk {
+            background-color: #333;
+            height: 250px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        .kitap-adi {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .yazar-adi {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .fiyat {
+            color: #f39c12;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        /* İletişim Eylemi */
+        .islem-alani {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 600px;
+            border: 1px solid #333;
+        }
+        .ana-buton {
+            background-color: #f39c12;
+            color: #121212;
+            padding: 15px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>KitapHep</h1>
+    <div class="alt-baslik">Nadir Kitap'ın eski dünyasından sıkılanlar için modern ve şık ikinci el kitap platformu.</div>
+
+    <!-- Kategoriler Menüsü -->
+    <div class="kategoriler">
+        <a href="#" class="kat-buton">Rus Edebiyatı</a>
+        <a href="#" class="kat-buton">Alman Edebiyatı</a>
+        <a href="#" class="kat-buton">Türk Edebiyatı</a>
+        <a href="#" class="kat-buton">Fantastik</a>
+        <a href="#" class="kat-buton">Klasikler</a>
+    </div>
+
+    <!-- Öne Çıkan Kitaplar Vitrini -->
+    <div class="vitrin-baslik">Öne Çıkan Kitaplar</div>
+    <div class="kitap-izgara">
+        
+        <!-- Örnek Kitap Kartı 1 -->
+        <div class="kitap-kart">
+            <div class="kitap-resim-bosluk">[Kitap Görseli]</div>
+            <div class="kitap-adi">Suç ve Ceza</div>
+            <div class="yazar-adi">Fyodor Dostoyevski</div>
+            <div class="fiyat">120 TL</div>
+        </div>
+
+        <!-- Örnek Kitap Kartı 2 -->
+        <div class="kitap-kart">
+            <div class="kitap-resim-bosluk">[Kitap Görseli]</div>
+            <div class="kitap-adi">Dune</div>
+            <div class="yazar-adi">Frank Herbert</div>
+            <div class="fiyat">165 TL</div>
+        </div>
+
+        <!-- Örnek Kitap Kartı 3 -->
+        <div class="kitap-kart">
+            <div class="kitap-resim-bosluk">[Kitap Görseli]</div>
+            <div class="kitap-adi">Dönüşüm</div>
+            <div class="yazar-adi">Franz Kafka</div>
+            <div class="fiyat">75 TL</div>
+        </div>
+
+    </div>
+
+    <!-- İletişim ve İşlem Alanı -->
+    <div class="islem-alani">
+        <h3>Kitap Satmak mı İstiyorsun?</h3>
+        <p>Elinizdeki ikinci el kitapları KitapHep güvencesiyle listelemek ve hızlıca nakde çevirmek için hemen bizimle iletişime geçin.</p>
+        <a href="https://instagram.com" target="_blank" class="ana-buton">Kitap Satış/Alım İçin DM Atın</a>
+    </div>
+
+</body>
+</html>
 
